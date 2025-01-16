@@ -4,7 +4,7 @@ public class Game {
     Player p;//Playerクラスのインスタンスを保持
     Card[] c;//Cardクラスの配列を宣言
 
-    Game() {
+    Game() {//コンストラクタ
         p = new Player();//Playerクラスのインスタンスを生成
         c = new Card[52];//Cardクラスの配列を生成
         String[] mark = {"♠", "♦", "♣", "♥"};//マークの配列
@@ -18,6 +18,7 @@ public class Game {
             }
         }
     }
+    
     void start() {
         Card cd = p.turn(c);//Playerクラスのturnメソッドを呼び出す
         cd.open();//Cardクラスのopenメソッドを呼び出す
